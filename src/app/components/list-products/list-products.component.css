@@ -1,0 +1,10 @@
+.title{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit-delete-buttons{
+    display: flex;
+    justify-content:space-around
+}

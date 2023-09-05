@@ -1,0 +1,77 @@
+2:55:00
+
+npm i ngx-toastr
+npm install @angular/animations --save
+angular.json
+    "styles": [
+              "src/styles.css",
+              "node_modules/ngx-toastr/toastr.css"
+            ],
+app.modules.ts 
+    import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+    import { ToastrModule } from 'ngx-toastr';
+    imports: [
+        BrowserAnimationsModule, // required animations module
+        ToastrModule.forRoot(), // ToastrModule added
+    ],
+Componente 
+    constructor(private toastr: ToastrService) {}
+
+router
+    app html
+    app.routing 
+    router link
+
+forms 
+    app.module 
+
+
+API CRUD Consume
+    enviroment/enviroment.ts 
+    app.modules.ts
+    services/product.services.ts
+    componenete.ts
+
+ 
+****************************************************************
+ctrl k c
+alt shift f
+------------
+npm install -g @angular/cli
+ng new my-first-project --no-strict
+ng serve
+------------
+import {FormsModule}   from '@angular/forms';
+imports: [
+    BrowserModule,
+    FormsModule
+  ],
+------------
+npm install --save bootstrap@3
+angular.json -> 
+    "styles": [
+              "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css"
+              ],
+------------
+ng generate component componentname
+ng g c componentname
+ ng g c recipes --skip-tests
+ ng g c recipes/recipe-list --skip-tests
+
+
+ ------------------------------------
+ @input para de un padre a un hijo
+ @output de un hijo a unpadre eventos 
+ Encapzulate css entre componentes 
+ Local refrences en el html # para pasar informacion al js como ngModel 
+
+constructor
+ ngOnChanges 
+ ngOnInit 
+ ngDoCheck
+ ngAfterContentInit
+ ngAfterContendChecked
+ ngAfterViewInit
+ ngAfterViewChecked
+ ngOnDestroy
