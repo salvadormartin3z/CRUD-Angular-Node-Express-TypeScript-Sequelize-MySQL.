@@ -1,5 +1,3 @@
-2:55:00
-
 npm i ngx-toastr
 npm install @angular/animations --save
 angular.json

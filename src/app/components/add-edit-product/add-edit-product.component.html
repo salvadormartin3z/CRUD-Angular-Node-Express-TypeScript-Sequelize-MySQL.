@@ -2,7 +2,7 @@
 <div *ngIf="!loading" class="row mt-2">
   <div class="col-lg-4 offset-lg-4">
     <div class="card bg-secondary mb-3" style="max-width: 25rem">
-      <div class="card-header text-center">Agregar producto</div>
+      <div class="card-header text-center">{{operacion}}producto</div>
       <div class="card-body">
         <form [formGroup]="form" (ngSubmit)="addProduct()">
           <input
