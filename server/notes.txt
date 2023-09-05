@@ -1,0 +1,42 @@
+2:27:23
+
+npm init -y
+    npm index.js
+
+npm install -g nodemon
+    nodemon index.js
+
+npm install -g typescript
+tsc --init
+    tsc
+
+
+tsc --watch 
+nodemon index.js
+
+npm i express dotenv cors sequelize mysql2
+npm i --save-dev @types/express
+npm i --save-dev @types/cors
+
+google extension "JSON Viewer"
+Postman
+----------------------------
+PORT 
+    .env 
+    index.ts 
+    models/server.ts
+
+Routes 
+ server 
+ controller 
+ routes
+
+API 
+ server.ts 
+    midlewares() {
+    //Parseamos el body
+    this.app.use(express.json());
+
+    //Cors
+    this.app.use(cors()); //Se usa para evitar problemas de seguridad al hacer la peticion desde el frontend
+   }
